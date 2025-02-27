@@ -1,19 +1,8 @@
-snmp:
-  user: "snmp_user"
-  authkey: "auth_key"
-  privkey: "priv_key"
-
 devices:
   sandbox-iosxr-1.cisco.com:
-    hostname: "iosxr-1"
-    ip: "sandbox-iosxr-1.cisco.com"
-    username: "admin"
-    password: "C1sco12345"
-    interfaces: [1, 2, 3]  # Interface indices for SNMP monitoring
-  # 192.168.1.2:
-  #   hostname: "Router2"
-  #   ip: "192.168.1.2"
-  #   username: "admin"
-  #   password: "cisco123"
-  #   secret: "cisco123"
-  #   interfaces: [1, 2, 4]
+    ip: sandbox-iosxr-1.cisco.com
+    username: admin
+    password: C1sco12345
+    interfaces:
+      - Loopback10
+      - Loopback20
